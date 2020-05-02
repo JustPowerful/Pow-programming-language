@@ -16,12 +16,12 @@ int main(int argc, char *argv[])
 	// checks if there's 2 arguments
 	if (argc == 2)
 	{
-		bool isPowFile = check_file_format(argv[1]); // check if the file is in ".pow" format
+		bool isPowlFile = check_file_format(argv[1]); // check if the file is in ".pow" format
 		
-		// the condition of check_file_format
-		if (!isPowFile)
+		// the condition of check_file_format if not met
+		if (!isPowlFile)
 		{
-			cout << "[FileError] File '" << argv[1] << "' is not in .pow format\n";
+			cout << "[FileError] File '" << argv[1] << "' is not in .powl format\n";
 			exit(1);
 		}
 		
@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 	  	{
 			while ( getline (codefile, line) )
 			{
+				
 				// counting the + / - characters
 				size_t plusnum = count(line.begin(), line.end(), '+');
 				size_t minusnum = count(line.begin(), line.end(), '-');
