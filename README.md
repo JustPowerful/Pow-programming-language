@@ -25,7 +25,7 @@ it's simple! you can use the minus symbol **( - )** it will subtract **1** from 
 You can create **spaces** using its ASCII value or simply by typing ``/``, you can also create line breaks using ``//``
 
 ### How to read pow ?
-Simply, multiply the sum of **( + )** symbols by **3** and then substract the sum of **( - )** symbols from the sum of **( + )** and you'll get an ASCII deciaml now you just need to convert it to a character.
+Simply, multiply the sum of **( + )** symbols by **3** and then substract the sum of **( - )** symbols from the multiplied sum of **( + )** and you'll get an ASCII decimal !
 
 ### Open-source ?
 Collaborate and make pow language better with us, every collaborator will be added in the **authors** list bellow !
