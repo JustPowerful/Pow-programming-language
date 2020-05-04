@@ -27,7 +27,7 @@ If you want to work with integers, you just need to use ``i`` in place of ``c``.
 You can create **spaces** using its ASCII value or simply by typing ``/``, you can also create line breaks using ``//``
 
 ### How to read pow ?
-Simply, multiply the sum of **( + )** symbols by **3** and then substract the sum of **( - )** symbols from the multiplied sum of **( + )** and you'll get an ASCII decimal !
+Simply, multiply the sum of **( + )** symbols by **3** and then substract the sum of **( - )** symbols from the multiplied sum of **( + )** and you'll get a number, now you just need to know if it's a character or an integer, just check the first letters if its ``c`` then its a character, if its ``i`` then its an integer.
 
 ### Open-source ?
 Collaborate and make pow language better with us, every collaborator will be added in the **authors** list bellow !
