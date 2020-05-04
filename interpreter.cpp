@@ -4,11 +4,12 @@
 #include <algorithm>
 
 #include "includes/formatcheck.h"
+#include "includes/checksyntax.h"
 
 using namespace std;
 int main(int argc, char *argv[])
 {
-	cout << "Pow Language V1.0 Interpreter \n";
+	cout << "Pow Language V1.1 Interpreter \n";
 	cout << "--------------------------------\n";
 	string line;
 	ifstream codefile (argv[1]);
@@ -55,12 +56,27 @@ int main(int argc, char *argv[])
 				}
 				// the ASCII total int
 				int linetotal = plusnum * 3 - minusnum;
-				// Converting ASCII deciamls to characters
-				char character = static_cast<char>(linetotal);
-
-
-
-				cout << character;
+				
+				
+				bool strokeIsPresent = SyntaxPresent(strokenum);
+				
+				if (!strokeIsPresent)
+				{
+					// check if its a character or integer
+					if (line[0] == 'c')
+					{
+						// Converting ASCII deciamls to characters
+						char character = static_cast<char>(linetotal);
+						cout << character;
+					} else if (line[0] == 'i')
+					{
+						cout << linetotal;
+					} else
+					{
+						cout << "[TypeError] is it an integer or a character ?\n";
+					}
+				}
+				
 			}
 			codefile.close();
 			cout << "\n";
