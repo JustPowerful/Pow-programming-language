@@ -1,13 +1,5 @@
 #include <iostream>
 #include <string>
+#include "formatcheck.cpp"
 
-using namespace std;
-bool check_file_format(string filename)
-{
-  string fn = filename;
-  if(fn.substr(fn.find_last_of(".") + 1) == "powl") {
-    return true; 
-  } else {
-    return false;
-  }
-}
+bool check_file_format(string filename);

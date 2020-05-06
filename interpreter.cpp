@@ -3,6 +3,7 @@
 #include <string>
 #include <algorithm>
 
+// Pow header files
 #include "includes/formatcheck.h"
 #include "includes/checksyntax.h"
 
@@ -57,7 +58,7 @@ int main(int argc, char *argv[])
 				// the ASCII total int
 				int linetotal = plusnum * 3 - minusnum;
 				
-				
+				// check if there's strokes in the line
 				bool strokeIsPresent = SyntaxPresent(strokenum);
 				
 				if (!strokeIsPresent)
