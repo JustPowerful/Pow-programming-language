@@ -1,4 +1,4 @@
-![thumbnail](https://www.mediafire.com/convkey/cf76/lxrp2u08htur5tk9g.jpg)
+![thumbnail](https://www.mediafire.com/convkey/cf76/lxrp2u08htur5tk9g.jpg) 
 
 **Note :** if you're not interested in writing pow codes, but you just want to understand how to read it go to [How to read pow ?](https://github.com/JustPowerful/Pow-programming-language/blob/master/README.md#how-to-read-pow-)
 
